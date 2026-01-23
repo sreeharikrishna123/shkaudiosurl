@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHK Audio – Professional Audio Solutions</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #0e0e0e;
+      color: #ffffff;
+    }
+
+    header {
+      padding: 20px;
+      background: #111;
+      text-align: center;
+      border-bottom: 1px solid #222;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      margin: 6px 0 0;
+      color: #aaa;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 40px;
+      align-items: center;
+      margin-top: 40px;
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      color: #bbb;
+      font-size: 18px;
+      max-width: 520px;
+    }
+
+    .hero img {
+      width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.7);
+    }
+
+    .product-card {
+      background: #161616;
+      border-radius: 14px;
+      padding: 20px;
+      max-width: 320px;
+      cursor: pointer;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product-card h3 {
+      margin: 14px 0 6px;
+    }
+
+    .product-card p {
+      color: #bbb;
+      font-size: 14px;
+    }
+
+    .product-page {
+      display: none;
+      max-width: 900px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .product-box {
+      background: #161616;
+      border-radius: 16px;
+      padding: 30px;
+    }
+
+    .price {
+      font-size: 22px;
+      margin: 12px 0;
+      color: #00ffcc;
+    }
+
+    .buy-btn {
+      margin-top: 20px;
+      padding: 14px 20px;
+      background: #00ffcc;
+      border: none;
+      color: #000;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+
+    .buy-btn:hover {
+      background: #00ddb3;
+    }
+
+    .download {
+      margin-top: 20px;
+      display: inline-block;
+      color: #00ffcc;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #111;
+      color: #777;
+      margin-top: 80px;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>SHK Audio</h1>
+  <p>Engineering-Driven • Professional DSP • High-Performance Audio</p>
+</header>
+
+<div class="container" id="home">
+  <div class="hero">
+    <div>
+      <h2>High-Precision Audio Engineering<br>Built in India</h2>
+      <p>We design and manufacture DSP-based audio boards focused on clean surround processing, reliability, and performance.</p>
+    </div>
+    <img src="shk01.jpg" alt="SHK01 DSP Board">
+  </div>
+
+  <h2 style="margin-top:60px;">Our Product</h2>
+
+  <div class="product-card" onclick="openProduct()">
+    <img src="shk01.jpg" alt="SHK01 DSP Board">
+    <h3>SHK01 DSP Audio Board</h3>
+    <p>DSP Stereo → 5.1 Surround • Active Crossover • Bass Management</p>
+  </div>
+</div>
+
+<div class="product-page" id="product">
+  <div class="product-box">
+    <h2>SHK01 – DSP Stereo to 5.1 Surround Decoder</h2>
+    <p>
+      Professional DSP audio board designed for surround sound decoding,
+      clean channel separation, and precise bass management.
+    </p>
+
+    <div class="price">₹ 1200</div>
+
+    <p><strong>Payment:</strong> UPI / GPay only</p>
+<p><strong>UPI Mobile Number:</strong> 7904894828</p>
+
+    <a href="SHK01_Datasheet.pdf" class="download" download>
+      ⬇ Download Datasheet (PDF)
+    </a>
+
+    <br><br>
+    <button class="buy-btn">Buy Now</button>
+  </div>
+</div>
+
+<footer>
+  © 2025 SHK Audio • Designed & Built in India
+</footer>
+
+<script>
+  function openProduct() {
+    document.getElementById("home").style.display = "none";
+    document.getElementById("product").style.display = "block";
+    window.scrollTo(0, 0);
+  }
+</script>
+
+</body>
+</html>
